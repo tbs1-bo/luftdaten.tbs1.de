@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>com.baselet.element.old.allinone.SequenceDiagram</type>
+    <coordinates>
+      <x>16</x>
+      <y>48</y>
+      <w>1240</w>
+      <h>352</h>
+    </coordinates>
+    <panel_attributes>title: sd Sensordata
+:Feinstaubsensor~s|:JsonMqttBridge(Port 8080)~jm|:MQTTBroker(Port 1883)~b|:FeinstaubPageRenderer~f|:WebServer(Port 443)~a|:Browser~br
+s-&gt;&gt;&gt;jm:POST request
+jm-&gt;&gt;&gt;b: publish(...)
+jm-&gt;&gt;&gt;b: publish(...)
+jm-&gt;&gt;&gt;b: publish(...)
+f-&gt;b: subscribe(...)
+b-&gt;&gt;&gt;f: send data
+f-&gt;&gt;&gt;f: wait
+f-&gt;&gt;&gt;f: gen_html
+f-&gt;&gt;&gt;a: save(current_values.html)
+br-&gt;&gt;&gt;a: GET
+a-&gt;&gt;&gt;br: current_values.html</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
