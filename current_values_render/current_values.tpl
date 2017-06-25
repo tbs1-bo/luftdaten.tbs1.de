@@ -7,7 +7,7 @@
 <h1>Luftsensordaten</h1>
 
 <div>
-Temperatur: {temperature}
+Temperatur: {temperature} Grad Celsius
 </div>
 
 <div>
