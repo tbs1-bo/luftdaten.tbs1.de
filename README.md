@@ -5,5 +5,5 @@ http://luftsensor.tbs1.de
 
 # Überblick
 
-![Overview](sd_overview.svg)
+![Overview](sd_overview.png)
 
