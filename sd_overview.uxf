@@ -3,8 +3,8 @@
   <element>
     <type>com.baselet.element.old.allinone.SequenceDiagram</type>
     <coordinates>
-      <x>16</x>
-      <y>48</y>
+      <x>32</x>
+      <y>16</y>
       <w>1240</w>
       <h>352</h>
     </coordinates>
@@ -15,8 +15,8 @@ jm-&gt;&gt;&gt;b: publish(...)
 jm-&gt;&gt;&gt;b: publish(...)
 jm-&gt;&gt;&gt;b: publish(...)
 f-&gt;b: subscribe(...)
+f-&gt;f: wait for data
 b-&gt;&gt;&gt;f: send data
-f-&gt;&gt;&gt;f: wait
 f-&gt;&gt;&gt;f: gen_html
 f-&gt;&gt;&gt;a: save(current_values.html)
 br-&gt;&gt;&gt;a: GET
