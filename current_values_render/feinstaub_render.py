@@ -8,7 +8,9 @@ MQTT_TOPIC_P1 = "feinstaub/ebike/sensordatavalues/0/value"
 MQTT_TOPIC_P2 = "feinstaub/ebike/sensordatavalues/1/value"
 MQTT_TOPIC_TEMP = "feinstaub/ebike/sensordatavalues/2/value"
 MQTT_TOPIC_HUM = "feinstaub/ebike/sensordatavalues/3/value"
-MQTT_TOPICS = [MQTT_TOPIC_P1, MQTT_TOPIC_P2, MQTT_TOPIC_TEMP, MQTT_TOPIC_HUM]
+MQTT_TOPIC_LAST_UPDATE = "feinstaub/ebike/stats/last_update"
+MQTT_TOPICS = [MQTT_TOPIC_P1, MQTT_TOPIC_P2, MQTT_TOPIC_TEMP, MQTT_TOPIC_HUM,
+               MQTT_TOPIC_LAST_UPDATE]
 
 # quality of service
 MQTT_QOS = 2
@@ -59,7 +61,9 @@ class FeinstaubPageRenderer:
         tpls = tpls.format(temperature=float(self.values[MQTT_TOPIC_TEMP]),
                            humidity=float(self.values[MQTT_TOPIC_HUM]),
                            p1=float(self.values[MQTT_TOPIC_P1]),
-                           p2=float(self.values[MQTT_TOPIC_P2]))
+                           p2=float(self.values[MQTT_TOPIC_P2]),
+                           update=str(self.values[MQTT_TOPIC_LAST_UPDATE],
+                                      encoding="UTF-8"))
 
         f = open(page_location, mode='w')
         f.write(tpls)
