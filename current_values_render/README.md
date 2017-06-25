@@ -8,7 +8,7 @@ template file `current_values.tpl`.
 Usage
 -----
 
-Look into `feinstaub_render.y` for configuration values at the top.
+Look into `feinstaub_render.py` for configuration values at the top.
 
 Invoke the script `python feinstaub_render.py` (preferably from within a virtual 
 environment).
