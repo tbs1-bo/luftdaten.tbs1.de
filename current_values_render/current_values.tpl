@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Luftsensordaten</title>
+    <!-- Latest compiled and minified CSS -->
+    <!-- TODO download, don't link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
 
 <body>
-<h1>Luftsensordaten</h1>
+<h1>
+    <span class="label label-default">Luftsensordaten der TBS1</span>
+</h1>
 
-<div>
-Temperatur: {temperature} Grad Celsius
+<div class="panel panel-success">
+<div class="panel-heading">
+    <h3 class="panel-title">Temperatur</h3>
+</div>
+<div class="panel panel-body">
+{temperature} Grad Celsius
+</div>
 </div>
 
-<div>
-Luftfeuchtigkeit: {humidity}
+<div class="panel panel-info">
+<div class="panel-heading">
+    <h3 class="panel-title">Luftfeuchtigkeit</h3>
+</div>
+<div class="panel panel-body">
+{humidity}
+</div>
 </div>
 
-<div>
-P1: {p1}
+<div class="panel panel-warning">
+<div class="panel-heading">
+    <h3 class="panel-title">P1</h3>
+</div>
+<div class="panel panel-body">
+{p1}
+</div>
 </div>
 
-<div>
-P2: {p2}
+<div class="panel panel-warning">
+<div class="panel-heading">
+    <h3 class="panel-title">P2</h3>
+</div>
+<div class="panel panel-body">
+{p2}
+</div>
 </div>
 
 </body>
