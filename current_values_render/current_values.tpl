@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="de">
 <head>
     <title>Luftsensordaten</title>
 </head>
