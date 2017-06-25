@@ -8,12 +8,12 @@ template file `current_values.tpl`.
 Usage
 -----
 
-Lookinto `feinstaub_render.y` for configuration values at the top.
+Look into `feinstaub_render.y` for configuration values at the top.
 
 Invoke the script `python feinstaub_render.py` (preferably from within a virtual 
 environment).
 
-Check if the generated html file.
+Check the generated html file.
 
 If the desired result appears, you can automate this with a cron job.
 
@@ -21,6 +21,6 @@ If the desired result appears, you can automate this with a cron job.
     
 To execute it every minute:
 
-    P=/path/to/project
-    * * * * * cd $P && /path/to/venv/bin/python feinstaub_render.py
+    PRJ=/path/to/project
+    * * * * * cd $PRJ && /path/to/venv/bin/python feinstaub_render.py
     
