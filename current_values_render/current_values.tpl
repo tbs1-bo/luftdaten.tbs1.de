@@ -53,6 +53,15 @@
     </div>
 </div>
 
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">Letzte Aktualisierung</h3>
+    </div>
+    <div class="panel panel-body">
+        {update}
+    </div>
+</div>
+
 </body>
 
 </html>
