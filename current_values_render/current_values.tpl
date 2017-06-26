@@ -24,7 +24,7 @@
             </h2>
         </div>
         <div class="col-xs-6">
-	        <img style="margin-top: 20px; height: 100px;" class="pull-right" src="logo.png" alt="Logo" />
+	        <img style="margin-top: 20px; height: 100px;" class="pull-right" src="./img/logo.png" alt="Logo" />
         </div>
     </div>
     <div class="row">
@@ -93,8 +93,8 @@
                         L&auml;nge: 7.2249
                     </address>
                     <a href="http://bochum.maps.luftdaten.info/#13/51.4810/7.2248">openData Feinstaub Map</a> <br />
-            <img style="width: 100%;" src="./standort/standort_wabe_pfeil.png" alt="Standort des Sensors in der Wabe" />  <br /><br />
-            <img style="width: 100%;" class="abbildung" src="./standort/standort_punkt.png" alt="Standort des Sensors als Punkt" /> 
+            <img style="width: 100%;" src="./img/standort_wabe_pfeil.png" alt="Standort des Sensors in der Wabe" />  <br /><br />
+            <img style="width: 100%;" class="abbildung" src="./img/standort_punkt.png" alt="Standort des Sensors als Punkt" /> 
                 </div>
             </div>
 
