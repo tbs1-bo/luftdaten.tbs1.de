@@ -5,16 +5,15 @@
     <coordinates>
       <x>32</x>
       <y>16</y>
-      <w>1240</w>
-      <h>352</h>
+      <w>1528</w>
+      <h>328</h>
     </coordinates>
     <panel_attributes>title: sd Sensordata
-:Feinstaubsensor~s|:JsonMqttBridge(Port 8080)~jm|:MQTTBroker(Port 1883)~b|:FeinstaubPageRenderer~f|:WebServer(Port 443)~a|:Browser~br
+:Feinstaubsensor~s|:JsonMqttBridge(Port 8080)~jm|:MQTTBroker(Port 1883)~b|:FeinstaubPageRenderer~f|:Cronjob~c|:WebServer(Port 443)~a|:Browser~br
 s-&gt;&gt;&gt;jm:POST request
-jm-&gt;&gt;&gt;b: publish(...)
-jm-&gt;&gt;&gt;b: publish(...)
-jm-&gt;&gt;&gt;b: publish(...)
-f-&gt;b: subscribe(...)
+jm-&gt;&gt;&gt;b: publish("feinstaub/...") [several times]
+c-&gt;f: run Job [every minute]
+f-&gt;b: subscribe("feinstaub/#")
 f-&gt;f: wait for data
 b-&gt;&gt;&gt;f: send data
 f-&gt;&gt;&gt;f: gen_html
