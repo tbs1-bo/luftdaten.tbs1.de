@@ -15,7 +15,7 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-10">
             <h1>
                 <span class="label label-primary">Feinstaubsensor der TBS1 in Bochum</span>
             </h1>
@@ -23,8 +23,8 @@
                 <span class="label label-info">Live-Daten des Sensors</span>
             </h2>
         </div>
-        <div class="col-xs-6">
-	        <img style="margin-top: 20px; height: 100px;" class="pull-right" src="./img/logo.png" alt="Logo" />
+        <div class="col-xs-2">
+	        <img class="img-responsive" src="./img/logo.png" alt="Logo" />
         </div>
     </div>
     <div class="row">
