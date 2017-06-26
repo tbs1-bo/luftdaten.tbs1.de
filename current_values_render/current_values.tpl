@@ -80,7 +80,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-12">
 
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -93,14 +93,15 @@
                         L&auml;nge: 7.2249
                     </address>
                     <a href="http://bochum.maps.luftdaten.info/#13/51.4810/7.2248">openData Feinstaub Map</a> <br />
-            <img style="width: 100%;" src="./img/standort_wabe_pfeil.png" alt="Standort des Sensors in der Wabe" />  <br /><br />
-            <img style="width: 100%;" class="abbildung" src="./img/standort_punkt.png" alt="Standort des Sensors als Punkt" /> 
+                    <img class="img-responsive" src="./img/standort_wabe_pfeil.png" alt="Standort des Sensors in der Wabe" />  <br /><br />
+                    <img class="img-responsive" src="./img/standort_punkt.png" alt="Standort des Sensors als Punkt" />
                 </div>
             </div>
 
         </div>
-        <div class="col-xs-6">
-
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">Letzte Aktualisierung</h3>
@@ -109,7 +110,6 @@
                     {update}
                 </div>
             </div>
-
         </div>
     </div>
 </div>
