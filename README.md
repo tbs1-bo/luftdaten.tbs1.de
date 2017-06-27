@@ -5,3 +5,6 @@ Webseite zur Darstellung von Sensordaten
 
 ![Overview](sd_overview.png)
 
+# TODO
+
+- Deployment: e.g. with ansible playbook
