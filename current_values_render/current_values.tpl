@@ -51,6 +51,8 @@
                 <div class="panel panel-body">
                   {p1} &micro;g/m&sup3;
                 </div>
+                (Maximal 40 &micro;g/m&sup3; im Jahresmittel)
+                <!-- Grenzwerte gemäß http://www.umweltbundesamt.de/themen/luft/luftschadstoffe/feinstaub -->
               </div>
             </div>
             <div class="col-xs-6">
@@ -61,6 +63,7 @@
                 <div class="panel panel-body">
                   {p2} &micro;g/m&sup3;
                 </div>
+                (Maximal 25 &micro;g/m&sup3; im Jahresmittel)
               </div>
             </div>
           </div>
