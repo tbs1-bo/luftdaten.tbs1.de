@@ -8,7 +8,3 @@ Webseite zur Darstellung von Sensordaten
 # TODO
 
 - Deployment: e.g. with ansible playbook
-
-# LEGAL
-
-- Das verwendete Hintergrundbild muss nicht zu wiederverwendung gekennzeichnet sein!
