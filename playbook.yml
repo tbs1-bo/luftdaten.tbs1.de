@@ -3,6 +3,13 @@
 
   tasks:
   
+  - name: create target directory
+    file:
+      state: directory
+      owner: administrator
+      group: www-data
+      path: /tmp/var/www/feinstaub
+
   #- name: Copy files into place
   #  copy:
   #    src: current_values_render/
@@ -20,6 +27,6 @@
       name: feinstaub_render_page
       minute: '*'
       # TODO change to correct program
-      # cd /home/administrator/proj/luftdaten.tbs1.de/current_values_render/ && /home/administrator/proj/feinstaub-json-mqtt-bridge-ve/bin/python feinstaub_render.py
+      # job: 'cd /home/administrator/proj/luftdaten.tbs1.de/current_values_render/ && /home/administrator/proj/feinstaub-json-mqtt-bridge-ve/bin/python feinstaub_render.py'
       job: echo
       
