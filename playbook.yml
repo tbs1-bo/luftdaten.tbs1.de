@@ -1,0 +1,25 @@
+---
+- hosts: luftsenor_deploy
+
+  tasks:
+  
+  #- name: Copy files into place
+  #  copy:
+  #    src: current_values_render/
+  #    # TODO adapt this to correct location
+  #    dest: /tmp/var/www/feinstaub/
+
+  - name: update/checkout git repo
+    git:
+      repo: 'https://github.com/tbs1-bo/luftdaten.tbs1.de.git'
+      # TODO adapt this for the correct location
+      dest: /tmp/home/administrator/proj/luftdaten.tbs1.de
+
+  - name: create cronjob
+    cron:
+      name: feinstaub_render_page
+      minute: '*'
+      # TODO change to correct program
+      # cd /home/administrator/proj/luftdaten.tbs1.de/current_values_render/ && /home/administrator/proj/feinstaub-json-mqtt-bridge-ve/bin/python feinstaub_render.py
+      job: echo
+      
