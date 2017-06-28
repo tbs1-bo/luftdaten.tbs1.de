@@ -1,5 +1,5 @@
 ---
-- hosts: luftsenor_deploy
+- hosts: luftsensor_deploy
 
   tasks:
   
