@@ -1,11 +1,14 @@
-# luftdaten.tbs1.de
+luftdaten.tbs1.de
+=================
 Webseite zur Darstellung von Sensordaten
 
-# Überblick
+Überblick
+---------
 
 ![Overview](sd_overview.png)
 
-# Installation
+Installation
+------------
 
 Der Dienst kann mit [ansible](https://docs.ansible.com) installiert werden
 
