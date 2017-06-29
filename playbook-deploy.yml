@@ -1,9 +1,10 @@
 ---
 - hosts: luftsensor_deploy
   vars:
-    # TODO adapt these to the correct location
     www_dest: /var/www/feinstaub
     repo_dest: /home/administrator/proj/luftdaten.tbs1.de
+    python_venv: /home/administrator/proj/luftdaten.tbs1.de-ve
+
   tasks:
   
   - name: create target directory in web root
@@ -24,6 +25,12 @@
       repo: 'https://github.com/tbs1-bo/luftdaten.tbs1.de.git'
       dest: '{{ repo_dest }}'
 
+  - name: install dependency paho-mqtt
+    pip:
+      name: paho-mqtt
+      virtualenv: '{{ python_venv }}'
+      virtualenv_python: python3
+      
   - name: create cronjob
     cron:
       name: feinstaub_render_page
