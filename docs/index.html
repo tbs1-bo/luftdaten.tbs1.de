@@ -2,6 +2,7 @@
 <html lang="de">
     <head>
         <meta charset="utf-8"> 
+		<link href="favicon.ico" rel="shortcut icon">
         <title>Feinstaubsensor der TBS1 in Bochum</title>
         <style type="text/css">
             <!--
@@ -9,15 +10,20 @@
                     width: 597px;
                 }
                 -->
+			h1 { color:white; font-size:48px; font-family:Tahoma }
+			h2 { color:white; font-size:24px; font-family:Tahoma }
+			h3 { color:white; font-size:18px; font-family:Tahoma }
+			ul { color:white; font-size:16px; font-family:Tahoma }
         </style>
     </head>
-    <body>
+    <body background="bg.png">
+	<div align="center">
         <h1>Feinstaubsensor der TBS1 in Bochum</h1>
         <h2>Links</h2>
         <ul>
-            <li><a href="https://www.madavi.de/ok-lab-stuttgart/">OK Lab Stuttgart, Madavi</a></li>
-            <li><a href="http://bochum.maps.luftdaten.info/#13/51.4810/7.2248">openData Feinstaub Map</a></li>
-            <li><a href="https://itawiki.tbs1.de/feinstaub/current_values.html">Livedaten des Sensors der TBS1</a></li>
+            <a href="https://www.madavi.de/ok-lab-stuttgart/"><font color="white">OK Lab Stuttgart, Madavi</a><br>
+            <a href="http://bochum.maps.luftdaten.info/#13/51.4810/7.2248"><font color="white">openData Feinstaub Map</a><br>
+            <a href="https://itawiki.tbs1.de/feinstaub/current_values.html"><font color="white">Livedaten des Sensors der TBS1</a><br>
         </ul>
         <h2>Standort</h2>
         <p>
@@ -25,7 +31,7 @@
             <img class="abbildung" src="./standort/standort_punkt.png" alt="Standort des Sensors als Punkt" /> 
         </p>
         <h3>Geokoordinaten</h3>
-        <p>
+        <p style="font-family: Tahoma; color:white">
             Breite: 51.4810 <br />
             L&auml;nge: 7.2249
         </p>
@@ -65,6 +71,7 @@
             <img class="abbildung" src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-dht-1-month.png" alt="Temperatur &uuml;ber einen Monat" />
             <img class="abbildung" src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-dht-25-month.png" alt="Relative Luftfeuchtigkeit &uuml;ber einen Monat" />
         </p>
+	</div>
     </body>
 </html>
 
