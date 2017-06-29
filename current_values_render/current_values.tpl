@@ -250,6 +250,7 @@
                 <h3 class="panel-title">Standort</h3>
               </div>
               <div class="panel panel-body">
+                <p>Der Feinstaubsensor befindet sich an der E-Bike-Garage der <a href="http://www.tbs1.de">Technischen Beruflichen Schule 1</a> an der Kreuzung Ostring/Moritz-Fiege-Stra&szlig;e in Bochum.</p>
                 <address>
                   <strong>Geokoordinaten</strong><br />
                   Breite: 51.4810 <br />
