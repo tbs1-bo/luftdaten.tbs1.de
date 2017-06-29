@@ -5,6 +5,13 @@ Webseite zur Darstellung von Sensordaten
 
 ![Overview](sd_overview.png)
 
-# TODO
+# Installation
 
-- Deployment: e.g. with ansible playbook
+Der Dienst kann mit [ansible](https://docs.ansible.com) installiert werden
+
+    $ ansible-playbook playbook-deploy.yml
+
+Im Playbook wird ein Host ``luftsensor_deploy``verwendet, der in der 
+entsprechenden Hosts-Datei als 
+[Inventory](https://docs.ansible.com/ansible/intro_inventory.html) 
+angegeben werden muss.
