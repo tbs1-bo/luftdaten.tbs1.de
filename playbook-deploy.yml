@@ -2,8 +2,8 @@
 - hosts: luftsensor_deploy
   vars:
     # TODO adapt these to the correct location
-    www_dest: /tmp/var/www/feinstaub
-    repo_dest: /tmp/home/administrator/proj/luftdaten.tbs1.de
+    www_dest: /var/www/feinstaub
+    repo_dest: /home/administrator/proj/luftdaten.tbs1.de
   tasks:
   
   - name: create target directory in web root
@@ -28,7 +28,6 @@
     cron:
       name: feinstaub_render_page
       minute: '*'
-      # TODO change to correct program
-      # job: 'cd /home/administrator/proj/luftdaten.tbs1.de/current_values_render/ && /home/administrator/proj/feinstaub-json-mqtt-bridge-ve/bin/python feinstaub_render.py'
-      job: echo
+      job: 'cd /home/administrator/proj/luftdaten.tbs1.de/current_values_render/ && /home/administrator/proj/feinstaub-json-mqtt-bridge-ve/bin/python feinstaub_render.py'
+      # job: echo
       
