@@ -35,6 +35,6 @@
     cron:
       name: feinstaub_render_page
       minute: '*'
-      job: 'cd /home/administrator/proj/luftdaten.tbs1.de/current_values_render/ && /home/administrator/proj/feinstaub-json-mqtt-bridge-ve/bin/python feinstaub_render.py'
+      job: 'cd {{ repo_dest }}/current_values_render/ && {{ python_venv }}/bin/python feinstaub_render.py'
       # job: echo
       
