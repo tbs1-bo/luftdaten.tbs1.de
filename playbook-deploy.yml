@@ -14,7 +14,7 @@
       group: www-data
       path: '{{ www_dest }}'
       
-  - name: Copy files into place web dir
+  - name: copying files into web dir
     copy:
       src: current_values_render/
       dest: '{{ www_dest }}'

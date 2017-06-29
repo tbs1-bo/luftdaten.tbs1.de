@@ -52,7 +52,7 @@
                 <div class="panel panel-body">
                   {p1} &micro;g/m&sup3;
                 </div>
-                (Maximal 40 &micro;g/m&sup3; im Jahresmittel)
+                (Maximal zulässiger Grenzwert im Jahresmittel: 40 &micro;g/m&sup3; )
                 <!-- Grenzwerte gemäß http://www.umweltbundesamt.de/themen/luft/luftschadstoffe/feinstaub -->
               </div>
             </div>
@@ -64,7 +64,7 @@
                 <div class="panel panel-body">
                   {p2} &micro;g/m&sup3;
                 </div>
-                (Maximal 25 &micro;g/m&sup3; im Jahresmittel)
+                (Maximal zulässiger Grenzwert im Jahresmittel: 25 &micro;g/m&sup3;)
               </div>
             </div>
           </div>
