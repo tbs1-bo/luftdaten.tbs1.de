@@ -13,12 +13,12 @@
       owner: administrator
       group: www-data
       path: '{{ www_dest }}'
-
-  #- name: Copy files into place
-  #  copy:
-  #    src: current_values_render/
-  #    # TODO adapt this to correct location
-  #    dest: {{ www_dest }}
+      
+  - name: Copy files into place web dir
+    copy:
+      src: current_values_render/
+      dest: '{{ www_dest }}'
+      group: www-data
 
   - name: update/checkout git repo
     git:
@@ -36,5 +36,4 @@
       name: feinstaub_render_page
       minute: '*'
       job: 'cd {{ repo_dest }}/current_values_render/ && {{ python_venv }}/bin/python feinstaub_render.py'
-      # job: echo
       
