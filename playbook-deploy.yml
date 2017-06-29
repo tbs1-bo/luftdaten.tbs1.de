@@ -1,26 +1,28 @@
 ---
 - hosts: luftsensor_deploy
-
+  vars:
+    # TODO adapt these to the correct location
+    www_dest: /tmp/var/www/feinstaub
+    repo_dest: /tmp/home/administrator/proj/luftdaten.tbs1.de
   tasks:
   
-  - name: create target directory
+  - name: create target directory in web root
     file:
       state: directory
       owner: administrator
       group: www-data
-      path: /tmp/var/www/feinstaub
+      path: '{{ www_dest }}'
 
   #- name: Copy files into place
   #  copy:
   #    src: current_values_render/
   #    # TODO adapt this to correct location
-  #    dest: /tmp/var/www/feinstaub/
+  #    dest: {{ www_dest }}
 
   - name: update/checkout git repo
     git:
       repo: 'https://github.com/tbs1-bo/luftdaten.tbs1.de.git'
-      # TODO adapt this for the correct location
-      dest: /tmp/home/administrator/proj/luftdaten.tbs1.de
+      dest: '{{ repo_dest }}'
 
   - name: create cronjob
     cron:
