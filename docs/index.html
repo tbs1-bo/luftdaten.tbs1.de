@@ -1,112 +1,144 @@
 <!doctype html>
 <html lang="de">
-    <head>
-        <meta charset="utf-8"> 
-		<link href="favicon.ico" rel="shortcut icon">
-        <link rel="stylesheet" href="tbs1_stylesheet.css">
-        <title>Feinstaubsensor der TBS1 in Bochum</title>
-    </head>
-    <body background="bg.png">
-	<div align="center">
-        <h1>Feinstaubsensor der TBS1 in Bochum</h1>
-        <h2>Links</h2>
-        <ul>
-            <li>
-                <a href="https://www.madavi.de/ok-lab-stuttgart/">
-                OK Lab Stuttgart, Madavi
-                </a>
-            </li>
-            <li>
-                <a href="http://bochum.maps.luftdaten.info/#13/51.4810/7.2248">
-                openData Feinstaub Map
-                </a>
-            </li>
-            <li>
-                <a href="https://it.tbs1.de/luftdaten/">
-                Livedaten des Sensors der TBS1
-                </a>
-            </li>
-        </ul>
-        <h2>Standort</h2>
-        <p>
-            <img class="abbildung" src="./standort/standort_wabe_pfeil.png"
-                 alt="Standort des Sensors in der Wabe" />
-            <img class="abbildung" src="./standort/standort_punkt.png"
-                 alt="Standort des Sensors als Punkt" />
-        </p>
-        <h3>Geokoordinaten</h3>
-        <p>
-            Breite: 51.4810 <br />
-            L&auml;nge: 7.2249
-        </p>
-        <h2>Gleitender 24h-Durchschnitt</h2>
-        <p>
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-sds011-1-floating.png"
-                 alt="Gleitender 24h-Durchschnitt des PM10-Wertes" />
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-sds011-25-floating.png"
-                 alt="Gleitender 24h-Durchschnitt des PM2.5-Wertes" />
-        </p>
-        <p>
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-dht-1-floating.png"
-                 alt="Gleitender 24h-Durchschnitt der Temperatur" />
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-dht-25-floating.png"
-                 alt="Gleitender 24h-Durchschnitt der relativen Luftfeuchtigkeit" />
-        </p>
-        <h2>Über einen Tag</h2>
-        <p>
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-sds011-1-day.png"
-                 alt="PM10-Wert &uuml;ber einen Tag" />
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-sds011-25-day.png"
-                 alt="PM2.5-Wert &uuml;ber einen Tag" />
-        </p>
-        <p>
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-dht-1-day.png"
-                 alt="Temperatur &uuml;ber einen Tag" />
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-dht-25-day.png"
-                 alt="Relative Luftfeuchtigkeit &uuml;ber einen Tag" />
-        </p>
-        <h2>&Uuml;ber eine Woche</h2>
-        <p>
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-sds011-1-week.png"
-                 alt="PM10-Wert &uuml;ber eine Woche" />
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-sds011-25-week.png"
-                 alt="PM2.5-Wert &uuml;ber eine Woche" />
-        </p>
-        <p>
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-dht-1-week.png"
-                 alt="Temperatur &uuml;ber eine Woche" />
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-dht-25-week.png"
-                 alt="Relative Luftfeuchtigkeit &uuml;ber eine Woche" />
-        </p>
-        <h2>&Uuml;ber einen Monat</h2>
-        <p>
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-sds011-1-month.png"
-                 alt="PM10-Wert &uuml;ber einen Monat" />
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-sds011-25-month.png"
-                 alt="PM2.5-Wert &uuml;ber einen Monat" />
-        </p>
-        <p>
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-dht-1-month.png"
-                 alt="Temperatur &uuml;ber einen Monat" />
-            <img class="abbildung"
-                 src="https://www.madavi.de/sensor/images/sensor-esp8266-3394227-dht-25-month.png"
-                 alt="Relative Luftfeuchtigkeit &uuml;ber einen Monat" />
-        </p>
-	</div>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="tbs1_stylesheet.css">
+    <title>Feinstaubsensor der TBS1 in Bochum</title>
+</head>
+<body>
+<h1>Feinstaubsensor der TBS1 in Bochum</h1>
+
+<h2>Links</h2>
+<ul>
+    <li>
+        <a href="https://www.madavi.de/ok-lab-stuttgart/">
+            OK Lab Stuttgart, Madavi
+        </a>
+    </li>
+    <li>
+        <a href="http://bochum.maps.luftdaten.info/#13/51.4810/7.2248">
+            openData Feinstaub Map
+        </a>
+    </li>
+    <li>
+        <a href="https://it.tbs1.de/luftdaten/">
+            Livedaten des Sensors der TBS1
+        </a>
+    </li>
+</ul>
+
+<h2>Standort</h2>
+<p>
+    <img class="abbildung" src="./standort/standort_wabe_pfeil.png"
+         alt="Standort des Sensors in der Wabe"/>
+    <img class="abbildung" src="./standort/standort_punkt.png"
+         alt="Standort des Sensors als Punkt"/>
+</p>
+
+<h3>Geokoordinaten</h3>
+<p>
+    Breite: 51.4810 <br/>
+    L&auml;nge: 7.2249
+</p>
+
+<h2>Technische Umsetzung</h2>
+<div class="text">
+    Der Sensor wurde im Jahr 2017 von Schülerinnen und Schülern
+    (Informationstechnische Assistenten) auf Grundlage des Projektes
+    <a href="http://www.luftdaten.info">luftdaten.info</a> gebaut und
+    an einer E-Bike Garage in der Nähe des Haupteinganges der TBS1 in Bochum
+    montiert.
+    <!-- TODO Hier wäre ein Bild schön -->
+    Dort wird er über einen Akku mit Strom versorgt und meldet sich an einem
+    Access Point im Internet an.
+    <p />
+    Die gesammelten Daten werden alle zwei Minuten in Form eines HTTP
+    POST-Request sowohl an die
+    öffentliche API von luftdaten.info gesendet, als auch an eine eigene
+    Anwendung - mehr dazu weiter unten.
+    <p />
+    Jeder POST-Request enthält die Daten im
+    <a href="https://de.wikipedia.org/wiki/JavaScript_Object_Notation">JSON</a>-Format
+    und ist wie das folgende Beispiel aufgebaut.
+    <pre>
+POST / HTTP/1.1
+Host: 192.168.223.215
+Content-Type: application/json
+Authorization: Basic
+X-PIN: 0
+X-Sensor: esp8266-3394227
+Content-Length: 412
+Connection: close
+
+{"esp8266id": "3394227", "software_version": "NRZ-2017-090",
+        "sensordatavalues":[{"value_type":"SDS_P1","value":"4.30"},
+                            {"value_type":"SDS_P2","value":"3.53"},
+                            {"value_type":"temperature","value":"20.80"},
+                            {"value_type":"humidity","value":"52.30"},
+                            {"value_type":"samples","value":"670215"},
+                            {"value_type":"min_micro","value":"205"},
+                            {"value_type":"max_micro","value":"505594"},
+                            {"value_type":"signal","value":"-82"}]}
+    </pre>
+
+    Diese JSON-Daten werden nun an einen eigenen API-Endpunkt gesendet - der
+    Quelltext ist in dem github-Projekt
+    <a href="https://github.com/tbs1-bo/feinstaub-json-mqtt-bridge">json-mqtt-bridge</a>
+    verfügbar. Wie der Name vermuten lässt, nimmt dieser Endpunkt die Daten
+    entgegen und leitet sie an einen
+    <a href="https://de.wikipedia.org/wiki/MQTT">MQTT</a>-Broker
+    weiter. MQTT ist ein u.a. von IBM entwickeltes offenes Protokoll,
+    das für die Übertragung von Sensordaten zwischen Maschinen entwickelt wurde.
+    An diesem Broker können sich wiederum andere Geärte anmelden und die an den
+    Broker gesendeten Daten abonnieren. Der Luftsensor sendet seine Daten
+    an das Topic "feinstaub/ebike" und darunterliegende Unterthemen. Eine
+    mögliche Ausgabe könnte wie folgt aussehen
+
+    <pre>
+'feinstaub/ebike/sensordatavalues/0/value_type' 'SDS_P1'
+'feinstaub/ebike/sensordatavalues/0/value' '5.37'
+'feinstaub/ebike/sensordatavalues/1/value_type' 'SDS_P2'
+'feinstaub/ebike/sensordatavalues/1/value' '1.73'
+'feinstaub/ebike/sensordatavalues/2/value_type' 'temperature'
+'feinstaub/ebike/sensordatavalues/2/value' '21.50'
+'feinstaub/ebike/sensordatavalues/3/value_type' 'humidity'
+'feinstaub/ebike/sensordatavalues/3/value' '50.70'
+'feinstaub/ebike/sensordatavalues/4/value_type' 'samples'
+'feinstaub/ebike/sensordatavalues/4/value' '701375'
+'feinstaub/ebike/sensordatavalues/5/value_type' 'min_micro'
+'feinstaub/ebike/sensordatavalues/5/value' '199'
+'feinstaub/ebike/sensordatavalues/6/value_type' 'max_micro'
+'feinstaub/ebike/sensordatavalues/6/value' '463871'
+'feinstaub/ebike/sensordatavalues/7/value_type' 'signal'
+'feinstaub/ebike/sensordatavalues/7/value' '-77'
+'feinstaub/ebike/software_version' 'NRZ-2017-092'
+'feinstaub/ebike/esp8266id' '3394227'
+'feinstaub/ebike/stats/last_update' '2017-06-30 15:20:15.439055'
+'feinstaub/ebike/stats/interval' '120'
+    </pre>
+
+    Andere Anwendungen können sich nun auf die unterschiedlichen
+    Topics bei dem Broker abonnieren und kreativ darauf reagiren. Der Broker
+    informiert die Anwendungen nämlich, sobald
+    es neue Nachrichten in dem Topic gibt.
+    <p/>
+    Eine Beispielanwendung generiert aus diesen Topics die Webseite
+    <a href="https://it.tbs1.de/luftdaten">it.tbs1.de/luftdaten</a> für die
+    Darstellung der Livedaten. Das Projekt befindet sich ebenfall bei github
+    unter dem Namen
+    <a href="https://github.com/tbs1-bo/luftdaten.tbs1.de">luftdaten.tbs1.de</a>
+    Hierbei handelt es sich um ein Python-Script, das in jeder Minute
+    von einem <a href="https://de.wikipedia.org/wiki/Cron">Cronjob</a>
+    gestartet wird, sich beim MQTT-Broker über die aktuellen Werte informiert
+    und anschließend die Webseite aus einem Template generiert. Die Webseite
+    wird auf dem Webserver abgelegt und kann dann von einem Browser abgerufen
+    werden.
+    <p/>
+    Die folgende Abbildung zeigt den gesamten Verlauf noch einmal in einer
+    Übersicht.
+    <p/>
+    <img src="sd_overview.png"/>
+</div>
+</body>
 </html>

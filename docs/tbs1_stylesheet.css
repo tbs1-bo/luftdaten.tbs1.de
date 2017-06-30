@@ -3,10 +3,16 @@
 }
 
 body {
-    color:white;
+    color:lightgray;
     font-family: Tahoma, serif;
+    background-image: url("bg.png");
 }
 
+.text {
+    width: 60%;
+}
+
+/* TODO absolute durch relative Werte ersetzen */
 h1 { font-size:48px; }
 h2 { font-size:24px; }
 h3 { font-size:18px; }
