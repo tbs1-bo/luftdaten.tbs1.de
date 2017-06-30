@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta http-equiv="refresh" content="60" >
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
