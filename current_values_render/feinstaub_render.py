@@ -73,9 +73,8 @@ class FeinstaubPageRenderer:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--target",
-                        help="""The target file name - 
-                        use /var/www/feinstaub/current_values.html if not 
-                        given""",
+                        help="""The target file name of the HTML-file to be 
+                        rendered.""",
                         required=True)
     args = parser.parse_args()
     logging.debug("parsed arguments: %s", args)
