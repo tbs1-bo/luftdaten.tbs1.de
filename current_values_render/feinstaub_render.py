@@ -33,7 +33,7 @@ class FeinstaubPageRenderer:
         for t in topics:
             self.values[t] = None
 
-    def connect_and_wait(self, host:str, wait_seconds:int, port:int=1883):
+    def connect_and_wait(self, host: str, wait_seconds: int, port: int=1883):
         self.client.connect(host, port=port)
         self.client.loop_start()
         logging.debug("wating %s seconds for values", wait_seconds)
