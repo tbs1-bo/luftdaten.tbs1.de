@@ -90,7 +90,7 @@ mögliche Ausgabe könnte wie folgt aussehen
     'feinstaub/ebike/stats/interval' '120'
 
 Andere Anwendungen können sich nun auf die unterschiedlichen
-Topics bei dem Broker abonnieren und kreativ darauf reagiren. Der Broker
+Topics bei dem Broker abonnieren und kreativ darauf reagieren. Der Broker
 informiert die Anwendungen nämlich, sobald
 es neue Nachrichten in dem Topic gibt.
 
