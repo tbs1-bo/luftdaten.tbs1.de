@@ -13,17 +13,9 @@ Usage
 
 Open `feinstaub_render.py` and look for configuration values at the top.
 
-Invoke the script `python feinstaub_render.py` (preferably from within a virtual 
+Invoke the script `python feinstaub_render.py --target /var/www/feinstaub/live-data.html` (preferably from within a virtual 
 environment).
 
 Check the generated html file.
 
-If the desired result appears, you can automate this process with a cron job.
-
-    crontab -e
-    
-To execute it every minute use a line similar to this:
-
-    PRJ=/path/to/project
-    * * * * * cd $PRJ && /path/to/venv/bin/python feinstaub_render.py
-    
+If the desired result appears, you can automate this process with a cron job.    
