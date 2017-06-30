@@ -1,22 +1,10 @@
 # Feinstaubsensor der TBS1 in Bochum
 
-## Links
+## Zusammenbau des Sensors
 
-- [OK Lab Stuttgart, Madavi](https://www.madavi.de/ok-lab-stuttgart/)
-- [openData Feinstaub Map](http://bochum.maps.luftdaten.info/#13/51.4810/7.2248)
-- [Livedaten des Sensors der TBS1](https://it.tbs1.de/luftdaten/)
-            
-## Standort
-![Standort](standort/standort_wabe_pfeil.png)
+TODO
 
-![Standort2](standort/standort_punkt.png)
-
-### Geokoordinaten
-
-- Breite: 51.4810
-- Länge: 7.2249
-
-## Technische Umsetzung
+## Auswertung der Daten
 
 Der Sensor wurde im Jahr 2017 von Schülerinnen und Schülern
 (Informationstechnische Assistenten) auf Grundlage des Projektes
@@ -111,3 +99,19 @@ Die folgende Abbildung zeigt den gesamten Verlauf noch einmal in einer
 
 ![sd overview](sd_overview.png)
 
+            
+## Standort
+![Standort](standort/standort_wabe_pfeil.png)
+
+![Standort2](standort/standort_punkt.png)
+
+### Geokoordinaten
+
+- Breite: 51.4810
+- Länge: 7.2249
+
+## Links
+
+- [OK Lab Stuttgart, Madavi](https://www.madavi.de/ok-lab-stuttgart/)
+- [openData Feinstaub Map](http://bochum.maps.luftdaten.info/#13/51.4810/7.2248)
+- [Livedaten des Sensors der TBS1](https://it.tbs1.de/luftdaten/)
