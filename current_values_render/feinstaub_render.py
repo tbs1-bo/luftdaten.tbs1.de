@@ -1,6 +1,7 @@
 import paho.mqtt.client as mqtt
 import time
 import logging
+import argparse
 
 MQTT_HOST = "localhost"
 
@@ -16,8 +17,7 @@ MQTT_TOPICS = [MQTT_TOPIC_P1, MQTT_TOPIC_P2, MQTT_TOPIC_TEMP, MQTT_TOPIC_HUM,
 MQTT_QOS = 2
 
 TEMPLATE_FILE = "current_values.tpl"
-PAGE_LOCATION = "/var/www/feinstaub/current_values.html"
-# PAGE_LOCATION = "current_values.html"
+
 
 # wait so many seconds for a new message
 WAIT_SECONDS = 3
@@ -33,7 +33,7 @@ class FeinstaubPageRenderer:
         for t in topics:
             self.values[t] = None
 
-    def connect_and_wait(self, host: str, wait_seconds: int, port: int=1883):
+    def connect_and_wait(self, host: str, wait_seconds: int, port: int = 1883):
         self.client.connect(host, port=port)
         self.client.loop_start()
         logging.debug("wating %s seconds for values", wait_seconds)
@@ -71,9 +71,19 @@ class FeinstaubPageRenderer:
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--target",
+                        help="""The target file name - 
+                        use /var/www/feinstaub/current_values.html if not 
+                        given""",
+                        required=True)
+    args = parser.parse_args()
+    logging.debug("parsed arguments: %s", args)
+
     f = FeinstaubPageRenderer(MQTT_TOPICS, MQTT_QOS)
     f.connect_and_wait(MQTT_HOST, WAIT_SECONDS)
-    f.render_page(TEMPLATE_FILE, PAGE_LOCATION)
+    f.render_page(TEMPLATE_FILE, args.target)
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
