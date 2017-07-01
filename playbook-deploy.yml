@@ -4,6 +4,7 @@
     www_dest: /var/www/feinstaub
     repo_dest: /home/administrator/proj/luftdaten.tbs1.de
     python_venv: /home/administrator/proj/luftdaten.tbs1.de-ve
+    cur_val_rend: '{{ repo_dest }}/current_values_render'
 
   tasks:
   
@@ -35,4 +36,4 @@
     cron:
       name: feinstaub_render_page
       minute: '*'
-      job: '{{ python_venv }}/bin/python feinstaub_render.py --template {{ repo_dest }}/current_values/current_values.tpl.html --target {{ www_dest }}/index.html'
+      job: '{{ python_venv }}/bin/python {{ cur_val_rend }}/feinstaub_render.py --template {{ cur_val_rend }}/current_values.tpl.html --target {{ www_dest }}/index.html'
