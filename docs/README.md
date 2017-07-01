@@ -2,18 +2,17 @@
 
 ## Zusammenbau des Sensors
 
-TODO
-
-## Auswertung der Daten
-
 Der Sensor wurde im Jahr 2017 von Schülerinnen und Schülern
 (Informationstechnische Assistenten) auf Grundlage des Projektes
 [luftdaten.info](http://www.luftdaten.info) gebaut und
 an einer E-Bike Garage in der Nähe des Haupteinganges der TBS1 in Bochum
 montiert.
-<!-- TODO Hier wäre ein Bild schön -->
+<!-- TODO Hier wären ein paar Bilder und weitere Informationen schön. -->
+
 Dort wird er über einen Akku mit Strom versorgt und meldet sich an einem
-Access Point im Internet an.
+Access Point im Internet an. An diesen werden die Daten übergeben.
+
+## Auswertung der Daten
 
 Die gesammelten Daten werden alle zwei Minuten in Form eines HTTP
 POST-Request sowohl an die
@@ -81,6 +80,8 @@ Andere Anwendungen können sich nun auf die unterschiedlichen
 Topics bei dem Broker abonnieren und kreativ darauf reagieren. Der Broker
 informiert die Anwendungen nämlich, sobald
 es neue Nachrichten in dem Topic gibt.
+
+### Darstellung der Live-Daten
 
 Eine Beispielanwendung generiert aus diesen Topics die Webseite
 [it.tbs1.de/luftdaten](https://it.tbs1.de/luftdaten) für die
