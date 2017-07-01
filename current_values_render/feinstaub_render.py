@@ -16,10 +16,6 @@ MQTT_TOPICS = [MQTT_TOPIC_P1, MQTT_TOPIC_P2, MQTT_TOPIC_TEMP, MQTT_TOPIC_HUM,
 # quality of service
 MQTT_QOS = 2
 
-# TODO use parameter for this instead
-TEMPLATE_FILE = "current_values.tpl.html"
-
-
 # wait so many seconds for a new message
 WAIT_SECONDS = 3
 
@@ -77,12 +73,15 @@ def main():
                         help="""The target file name of the HTML-file to be 
                         rendered.""",
                         required=True)
+    parser.add_argument("--template",
+                        help="Template file to be used.",
+                        required=True)
     args = parser.parse_args()
     logging.debug("parsed arguments: %s", args)
 
     f = FeinstaubPageRenderer(MQTT_TOPICS, MQTT_QOS)
     f.connect_and_wait(MQTT_HOST, WAIT_SECONDS)
-    f.render_page(TEMPLATE_FILE, args.target)
+    f.render_page(args.template, args.target)
 
 
 if __name__ == "__main__":

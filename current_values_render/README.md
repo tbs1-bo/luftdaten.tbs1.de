@@ -13,9 +13,16 @@ Usage
 
 Open `feinstaub_render.py` and look for configuration values at the top.
 
-Invoke the script `python feinstaub_render.py --target /var/www/feinstaub/live-data.html` (preferably from within a virtual 
-environment).
+The script needs some parameters. Use the ``--help`` option to list them.
 
-Check the generated html file.
+    $ python feinstaub_render.py --help
 
-If the desired result appears, you can automate this process with a cron job.    
+Invoke the script in the following way (preferably from within a virtual 
+environment):
+ 
+    $ python feinstaub_render.py --template /my/template.tpl.html --target /var/www/feinstaub/live-data.html 
+
+There is an example template file in the repository.
+
+Check the generated html file. If the desired result appears, you can automate 
+this process with a cron job.    

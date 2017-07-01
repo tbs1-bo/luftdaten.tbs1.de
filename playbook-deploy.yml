@@ -35,4 +35,4 @@
     cron:
       name: feinstaub_render_page
       minute: '*'
-      job: 'cd {{ repo_dest }}/current_values_render/ && {{ python_venv }}/bin/python feinstaub_render.py --target {{ www_dest }}/index.html'
+      job: '{{ python_venv }}/bin/python feinstaub_render.py --template {{ repo_dest }}/current_values/current_values.tpl.html --target {{ www_dest }}/index.html'
