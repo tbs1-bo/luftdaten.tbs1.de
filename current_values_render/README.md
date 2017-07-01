@@ -3,7 +3,7 @@ Render current values
 
 The python script `feinstaub_render.py` listens some seconds for certain topics 
 on an mqtt broker and generates an html file of the values afterwwards using the 
-template file `current_values.tpl`. Look for variables marked with `{varname}` 
+template file `current_values.tpl.html`. Look for variables marked with `{varname}` 
 in the template file - these are substituted during generation.
 
 The template itself relies on the [Bootstrap](https://getbootstrap.com/) framework.

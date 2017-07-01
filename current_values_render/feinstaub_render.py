@@ -16,7 +16,8 @@ MQTT_TOPICS = [MQTT_TOPIC_P1, MQTT_TOPIC_P2, MQTT_TOPIC_TEMP, MQTT_TOPIC_HUM,
 # quality of service
 MQTT_QOS = 2
 
-TEMPLATE_FILE = "current_values.tpl"
+# TODO use parameter for this instead
+TEMPLATE_FILE = "current_values.tpl.html"
 
 
 # wait so many seconds for a new message
