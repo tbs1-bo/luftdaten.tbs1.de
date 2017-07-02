@@ -1,6 +1,6 @@
 site_name: Feinstaubsensor der TBS1
 repo_url: https://github.com/tbs1-bo/luftdaten.tbs1.de/docs
-
+ 
 pages:
   - Daten: daten.md
   - Dokumentation: index.md
