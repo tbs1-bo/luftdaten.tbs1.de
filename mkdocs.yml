@@ -8,6 +8,5 @@ pages:
 #theme: mkdocs
 theme: readthedocs
 
-# there is special handling of extra.css
-# ignoring this
-extra_css: []
+extra_css:
+  - css/tbs1_stylesheet.css
