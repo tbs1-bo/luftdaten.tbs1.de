@@ -98,13 +98,13 @@ werden.
 Die folgende Abbildung zeigt den gesamten Verlauf noch einmal in einer
 Übersicht.
 
-![sd overview](sd_overview.png)
+![sd overview](img/sd_overview.png)
 
             
 ## Standort
-![Standort](standort/standort_wabe_pfeil.png)
+![Standort](img/standort_wabe_pfeil.png)
 
-![Standort2](standort/standort_punkt.png)
+![Standort2](img/standort_punkt.png)
 
 ### Geokoordinaten
 

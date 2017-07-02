@@ -1,6 +1,6 @@
-<img src="./img/logo.png" alt="Logo" />
+![Logo](img/logo.png)
 
-# Feinstaub
+# Feinstaubwerte
 
 MP10                  | MP 2.5
 ----------------------|-------
@@ -66,11 +66,13 @@ Temperatur           | Relative Luftfeuchtigkeit
 
 # Archiv-Daten im CSV-Format
 
-- <a href="https://archive.luftdaten.info">archive.luftdaten.info</a>
-- Feinstaub PM10 und PM2.5: /yyyy-mm-dd/yyyy-mm-dd_sds011_sensor_3659.csv
-- Temperatur und Luftfeuchtigkeit: /yyyy-mm-dd/yyyy-mm-dd_dht22_sensor_3660.csv
+- [archive.luftdaten.info](https://archive.luftdaten.info)
+- Feinstaub PM10 und PM2.5: ``/yyyy-mm-dd/yyyy-mm-dd_sds011_sensor_3659.csv``
+- Temperatur und Luftfeuchtigkeit: ``/yyyy-mm-dd/yyyy-mm-dd_dht22_sensor_3660.csv``
 
-Der Feinstaubsensor befindet sich an der E-Bike-Garage der <a href="https://www.tbs1.de">Technischen Beruflichen Schule 1</a> an der Kreuzung Ostring/Moritz-Fiege-Stra&szlig;e in Bochum.
+Der Feinstaubsensor befindet sich an der E-Bike-Garage der
+[Technischen Beruflichen Schule 1](https://www.tbs1.de) an der
+Kreuzung Ostring/Moritz-Fiege-Stra&szlig;e in Bochum.
 
 <address>
                   <strong>Geokoordinaten</strong><br />
@@ -78,8 +80,8 @@ Der Feinstaubsensor befindet sich an der E-Bike-Garage der <a href="https://www.
                   L&auml;nge: 7.2249
 </address>
 
-<a href="http://bochum.maps.luftdaten.info/#13/51.4810/7.2248">openData Feinstaub Map</a>
+[openData Feinstaub Map](http://bochum.maps.luftdaten.info/#13/51.4810/7.2248)
 
-<img style="width: 100%;" src="./img/standort_wabe_pfeil.png" alt="Standort des Sensors in der Wabe" />
+![Standort des Sensors in der Wabe](img/standort_wabe_pfeil.png)
 
-<img style="width: 100%;" class="abbildung" src="./img/standort_punkt.png" alt="Standort des Sensors als Punkt" /> 
+![Standort des Sensors als Punkt](img/standort_punkt.png)
