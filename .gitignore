@@ -2,3 +2,4 @@
 __pycache__
 *~
 current_values.tpl.html
+.venv
