@@ -3,6 +3,7 @@
   vars:
     www_dest: /var/www/feinstaub
     repo_dest: /home/administrator/proj/luftdaten.tbs1.de
+    # TODO move venv folder inside repo destination
     python_venv: /home/administrator/proj/luftdaten.tbs1.de-ve
 
   tasks:
