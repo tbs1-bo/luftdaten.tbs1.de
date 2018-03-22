@@ -31,16 +31,46 @@ und ist wie das folgende Beispiel aufgebaut.
     X-Sensor: esp8266-3394227
     Content-Length: 412
     Connection: close
-    
-    {"esp8266id": "3394227", "software_version": "NRZ-2017-090",
-            "sensordatavalues":[{"value_type":"SDS_P1","value":"4.30"},
-                                {"value_type":"SDS_P2","value":"3.53"},
-                                {"value_type":"temperature","value":"20.80"},
-                                {"value_type":"humidity","value":"52.30"},
-                                {"value_type":"samples","value":"670215"},
-                                {"value_type":"min_micro","value":"205"},
-                                {"value_type":"max_micro","value":"505594"},
-                                {"value_type":"signal","value":"-82"}]}
+
+    {
+        "esp8266id": "3394227",
+        "software_version": "NRZ-2017-090",
+        "sensordatavalues": [
+            {
+                "value_type": "SDS_P1",
+                "value": "4.30"
+            },
+            {
+                "value_type": "SDS_P2",
+                "value": "3.53"
+            },
+            {
+                "value_type": "temperature",
+                "value": "20.80"
+            },
+            {
+                "value_type": "humidity",
+                "value": "52.30"
+            },
+            {
+                "value_type": "samples",
+                "value": "670215"
+            },
+            {
+                "value_type": "min_micro",
+                "value": "205"
+            },
+            {
+                "value_type": "max_micro",
+                "value": "505594"
+            },
+            {
+                "value_type": "signal",
+                "value": "-82"
+            }
+        ]
+    }
+
 
 Diese JSON-Daten werden nun an einen eigenen API-Endpunkt gesendet - der
 Quelltext ist in dem github-Projekt
