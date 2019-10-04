@@ -23,3 +23,9 @@ for f in archive/*3659.csv; do
 done
 sqlite3 $DB 'DELETE FROM feinstaub WHERE sensor_id<>3659'
 sqlite3 $DB -cmd '.headers on' -cmd '.mode column' 'SELECT * FROM feinstaub limit 10;'
+
+# creating views 
+
+sqlite3 $DB 'CREATE VIEW temp_hum_view AS SELECT strftime("%Y",timestamp) year,strftime("%m",timestamp) month, strftime("%d",timestamp) day, strftime("%H",timestamp) hour, strftime("%M",timestamp) minute, temperature,humidity from temp_hum'
+
+sqlite3 $DB 'CREATE VIEW feinstaub_view AS SELECT strftime("%Y",timestamp) year,strftime("%m",timestamp) month, strftime("%d",timestamp) day, strftime("%H",timestamp) hour, strftime("%M",timestamp) minute, p1,p2 from feinstaub'
