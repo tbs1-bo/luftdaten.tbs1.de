@@ -17,4 +17,4 @@ for y in 2019 2018 2017; do
     sleep 4;  # wait some seconds for processes to finish
 done
 
-rm wget-log.*
+rm wget-log*
