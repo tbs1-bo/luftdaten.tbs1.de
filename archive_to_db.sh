@@ -1,8 +1,8 @@
 #!/bin/bash
 
-SQLCREATETABLE1="CREATE TABLE temp_hum (sensor_id int, sensor_type text, location int, lat float, lon float, timestamp datetime, temperature float, humidity float);"
+SQLCREATETABLE1="CREATE TABLE temp_hum (sensor_id int, sensor_type text, location int, lat real, lon real, timestamp datetime, temperature real, humidity real);"
 
-SQLCREATE_TABLE2="CREATE TABLE feinstaub (sensor_id int, sensor_type text, location int,lat float,lon float, timestamp datetime, P1 float,durP1 float,ratioP1 float,P2 float,durP2 float, ratioP2 float)"
+SQLCREATETABLE2="CREATE TABLE feinstaub (sensor_id int, sensor_type text, location int, lat real, lon real, timestamp datetime, P1 real, durP1 real, ratioP1 real,P2 real,durP2 real, ratioP2 real);"
 
 DB=sensordata.db
 
