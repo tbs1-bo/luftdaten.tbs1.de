@@ -13,6 +13,7 @@ for f in archive/*3660.csv; do
     echo "importing $f"
     sqlite3 $DB -csv -csv -separator \; ".import $f temp_hum"
 done
+# import contains first line of csv-file. get rid of if
 sqlite3 $DB 'DELETE FROM temp_hum WHERE sensor_id<>3660'
 sqlite3 $DB -cmd '.headers on' -cmd '.mode column' 'SELECT * FROM temp_hum limit 10;'
 
@@ -21,6 +22,7 @@ for f in archive/*3659.csv; do
     echo "importing $f"
     sqlite3 $DB -csv -csv -separator \; ".import $f feinstaub"
 done
+# import contains first line of csv-file. get rid of if
 sqlite3 $DB 'DELETE FROM feinstaub WHERE sensor_id<>3659'
 sqlite3 $DB -cmd '.headers on' -cmd '.mode column' 'SELECT * FROM feinstaub limit 10;'
 
