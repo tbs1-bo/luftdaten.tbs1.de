@@ -26,6 +26,6 @@ sqlite3 $DB -cmd '.headers on' -cmd '.mode column' 'SELECT * FROM feinstaub limi
 
 # creating views 
 
-sqlite3 $DB 'CREATE VIEW temp_hum_view AS SELECT strftime("%Y",timestamp) year,strftime("%m",timestamp) month, strftime("%d",timestamp) day, strftime("%H",timestamp) hour, strftime("%M",timestamp) minute, temperature,humidity from temp_hum'
+sqlite3 $DB 'CREATE VIEW temp_hum_view AS SELECT cast(strftime("%Y",timestamp) as integer) year, cast(strftime("%m",timestamp) as integer) month, cast(strftime("%d",timestamp) as integer) day, cast(strftime("%H",timestamp) as integer) hour, cast(strftime("%M",timestamp) as integer) minute, temperature,humidity from temp_hum'
 
-sqlite3 $DB 'CREATE VIEW feinstaub_view AS SELECT strftime("%Y",timestamp) year,strftime("%m",timestamp) month, strftime("%d",timestamp) day, strftime("%H",timestamp) hour, strftime("%M",timestamp) minute, p1,p2 from feinstaub'
+sqlite3 $DB 'CREATE VIEW feinstaub_view AS SELECT cast(strftime("%Y",timestamp) as integer) year, cast(strftime("%m",timestamp) as integer) month, cast(strftime("%d",timestamp) as integer) day, cast(strftime("%H",timestamp) as integer) hour, cast(strftime("%M",timestamp) as integer) minute, p1,p2 from feinstaub'
