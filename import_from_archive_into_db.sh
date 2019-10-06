@@ -4,7 +4,7 @@ SQLCREATETABLE1="CREATE TABLE temp_hum (sensor_id int, sensor_type text, locatio
 
 SQLCREATETABLE2="CREATE TABLE feinstaub (sensor_id int, sensor_type text, location int, lat real, lon real, timestamp datetime, P1 real, durP1 real, ratioP1 real,P2 real,durP2 real, ratioP2 real);"
 
-SQL_TIME_SPLIT='cast(strftime("%Y",timestamp) as integer) year, cast(strftime("%m",timestamp) as integer) month, cast(strftime("%d",timestamp) as integer) day, cast(strftime("%H",timestamp) as integer) hour, cast(strftime("%M",timestamp) as integer) minute'
+SQL_TIME_SPLIT='CAST(strftime("%Y",timestamp) AS INTEGER) year, CAST(strftime("%m",timestamp) AS INTEGER) month, CAST(strftime("%d",timestamp) AS INTEGER) day, CAST(strftime("%H",timestamp) AS INTEGER) hour, CAST(strftime("%M",timestamp) AS INTEGER) minute'
 
 DB=sensordata.db
 
