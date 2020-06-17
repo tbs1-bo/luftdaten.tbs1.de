@@ -4,7 +4,12 @@ import datetime
 BASE = "http://archive.luftdaten.info"
 
 def download(url):
-    'Download and return data from the given URL.'
+    """
+    Download and return data from the given URL.
+    >>> data = download('https://de.wikipedia.org')
+    >>> type(data)
+    <class 'bytes'>
+    """
     data = urllib.request.urlopen(url).read()
     return data
 
