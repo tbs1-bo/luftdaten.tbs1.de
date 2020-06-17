@@ -5,3 +5,7 @@ sensordata.db: archive
 
 archive:
 	./download_archive.sh
+
+test:
+	python3 -m doctest *py
+	
