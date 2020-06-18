@@ -10,6 +10,8 @@ def download(url):
     >>> type(data)
     <class 'bytes'>
     """
+    # Alternatives are described here: 
+    # https://www.blog.pythonlibrary.org/2020/06/18/how-to-download-a-file-with-python-video/
     data = urllib.request.urlopen(url).read()
     return data
 
