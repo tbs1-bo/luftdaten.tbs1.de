@@ -6,7 +6,7 @@ test -d archive || mkdir archive
 
 cd archive
 
-for y in 2020 2019 2018 2017; do
+for y in 2021 2020 2019 2018 2017; do
     for m in $(seq -w 12); do
         for d in $(seq -w 31); do
             # -b: run in background
