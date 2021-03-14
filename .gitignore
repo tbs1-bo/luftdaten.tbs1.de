@@ -108,3 +108,5 @@ ENV/
 archive/
 sensordata.db
 .vscode/
+
+.DS_Store
