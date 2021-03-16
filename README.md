@@ -11,5 +11,5 @@ Der Dienst kann mit [ansible](https://docs.ansible.com) installiert werden
 
 Im Playbook wird ein Host ``luftsensor_deploy``verwendet, der in der 
 entsprechenden Hosts-Datei als 
-[Inventory](https://docs.ansible.com/ansible/intro_inventory.html) 
+[Inventory](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html) 
 angegeben werden muss.
